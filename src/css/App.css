@@ -213,3 +213,6 @@ tbody td {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); }
   .table-specs td {
     height: 40px; }
+
+.stars-review-table svg {
+  max-width: 30px; }

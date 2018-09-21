@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StarRatings from '../../node_modules/react-star-ratings';
 
 // CSS
 import '../css/App.css'
@@ -12,8 +13,13 @@ class ListReviews extends Component {
                     <td>
                         {item.reviewValue}
                     </td>
-                    <td>
-                        {item.reviewRating}
+                    <td className={'stars-review-table'}>
+                        <StarRatings
+                            rating={item.reviewRating}
+                            numberOfStars={item.reviewRating}
+                            starRatedColor={'rgb(255,194,25)'}
+                        />
+                        
                     </td>
                     <td>
                         {item.reviewAuthor}
