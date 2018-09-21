@@ -5,7 +5,7 @@ export default () => ({
             "name": "Iphone 8",
             "price": 50,
             "rating": 0,
-            "specs": '<table class="table-specs"><tbody><tr class="ztXv9"><th style="padding-left:0">performance</th><th>Hexa Core</th></tr><tr><td style="padding-left:0">display</td><td>5.5" (13.97 cm)</td></tr><tr><td style="padding-left:0">storage</td><td>256 GB</td></tr><tr><td style="padding-left:0">camera</td><td>12 MP</td></tr><tr><td style="padding-left:0">battery</td><td>2675 mAh</td></tr></tbody></table>',
+            "specs": "<ul><li>iPhone 8 Plus introduces an all-new glass design. The world's most popular camera, now even better. The smartest, most powerful chip ever in a smartphone. Wireless charging that's truly effortless. And augmented reality experiences never before possible. iPhone 8 Plus. A new generation of iPhone. (P3)</li><li>IPhone 8 introduces an all‑new glass design. The world’s most popular camera, now even better. The most powerful and smartest chip ever in a smartphone. Wireless charging that’s truly effortless. And augmented reality experiences never before possible. iPhone 8. A new generation of iPhone.  </li><li>The most durable glass ever in a smartphone, front and back. A color-matched, aerospace-grade aluminum band.</li><li>Iphone 8is precision-engineered at the microscopic.</li><li>Oleophobic coating resistant to fingerprints</li><li>Compatibility to display multiple languages ​​and characters simultaneously</li><li>Screen zoom</li><li>Easy reach</li></ul>",
             "capacity": "<ul><li>Screen with a wide range of colors (P3)</li><li>3D Touch</li><li>Maximum brightness of 625 cd / m2 (normal)</li><li>Dual domain pixels for wide viewing angles</li><li>Oleophobic coating resistant to fingerprints</li><li>Compatibility to display multiple languages ​​and characters simultaneously</li><li>Screen zoom</li><li>Easy reach</li></ul>",
             "description": "The iPhone 8 and 8 Plus feature glass bodies that enable wireless charging, faster A11 processors, upgraded cameras, and True Tone displays. Launched on September 22, 2017",
             "reviews": [
@@ -39,7 +39,7 @@ export default () => ({
                 {
                     "url": "http://invadersgroup.com/reviews-react-images/3.jpg"
                 }
-                
+
             ],
             // Imagenes Producto 1 SlideShow Principal Segunda Vista
             "secondImages": [
