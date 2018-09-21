@@ -15,8 +15,8 @@ class ListReviews extends Component {
                     </td>
                     <td className={'stars-review-table'}>
                         <StarRatings
-                            rating={item.reviewRating}
-                            numberOfStars={item.reviewRating}
+                            rating={Number(item.reviewRating)}
+                            numberOfStars={Number(item.reviewRating)}
                             starRatedColor={'rgb(255,194,25)'}
                         />
                         

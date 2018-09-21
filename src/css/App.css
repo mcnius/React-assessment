@@ -118,7 +118,8 @@ body {
   .details-page-wrapper .buttons {
     margin: 4em 0 2em;
     display: flex;
-    justify-content: space-between; }
+    justify-content: center;
+    padding: 0 8em; }
     .details-page-wrapper .buttons .button-specifications, .details-page-wrapper .buttons .button-capacity, .details-page-wrapper .buttons .button-review {
       background: white;
       color: gray;
@@ -128,7 +129,8 @@ body {
       cursor: pointer;
       border-bottom-width: 2px;
       border-bottom-style: solid;
-      border-bottom-color: transparent; }
+      border-bottom-color: transparent;
+      margin: 0 1.5em; }
     .details-page-wrapper .buttons .button-specifications:hover, .details-page-wrapper .buttons .button-capacity:hover, .details-page-wrapper .buttons .button-review:hover {
       border-bottom-color: orange; }
   .details-page-wrapper .text-box {
@@ -177,22 +179,48 @@ tbody td {
 
 .review-panel {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #423b27;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1em; }
+  .review-panel .review-panel__row {
+    width: 100%;
+    padding: 0;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: .5em 0;
+    padding-left: 0; }
+  .review-panel .review-panel__row i {
+    display: flex;
+    height: 100%;
+    font-size: 1.5em;
+    background: #d79900;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 .5em;
+    width: 20%;
+    color: #fff; }
+    .review-panel .review-panel__row i::before {
+      margin: 0 auto; }
   .review-panel .review-panel__input {
-    border: 1px solid orange;
     min-height: 50px;
     text-align: center;
-    border-radius: 1em;
-    margin: 0 .5em; }
+    margin: 0;
+    width: 80%; }
     .review-panel .review-panel__input:active, .review-panel .review-panel__input:focus {
       outline: none; }
   .review-panel .review-panel__button {
-    min-height: 50px;
+    min-height: 20px;
     outline: none;
     border: none;
-    padding: 1em;
-    border-radius: .51em;
+    padding: .6em;
+    width: 50%;
     cursor: pointer; }
     .review-panel .review-panel__button.button-add-review {
       background: #38b938;
