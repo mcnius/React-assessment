@@ -73,53 +73,58 @@ class ReviewBox extends Component {
         return (
             <div>
                 <ListReviews reviews={this.state.reviews}/>
-                <div className={'review-panel'}>
-                    <div className={'review-panel__row'}>
-                        <i className={'fas fa-comment'}></i>
-                        <input
-                            className={'review-panel__input review-message'}
-                            type="text"
-                            value={this.state.reviewValue}
-                            onChange={this.handleReviewValue}
-                            placeholder={"Review"}
-                        />
-                    </div>
+                <div clasName={'container-after-reviews'}>
+                    <div className={'review-panel'}>
+                        <div className={'review-panel__row'}>
+                            <i className={'fas fa-comment'}></i>
+                            <input
+                                className={'review-panel__input review-message'}
+                                type="text"
+                                value={this.state.reviewValue}
+                                onChange={this.handleReviewValue}
+                                placeholder={"Review"}
+                            />
+                        </div>
 
-                    <div className={'review-panel__row'}>
-                        <i className={'fas fa-user'}></i>
-                        <input
-                            className={'review-panel__input review-name'}
-                            type="text"
-                            value={this.state.authorName}
-                            onChange={this.handleAuthorValue}
-                            placeholder={"Author Name"}
-                        />
-                    </div>
-                    <div className={'review-panel__row'}>
-                        <i className={'fas fa-star'}></i>
-                        <input
-                            className={'review-panel__input review-rating'}
-                            type="number"
-                            min="1"
-                            max="5"
-                            value={this.state.ratingValue}
-                            onChange={this.handleScoreValue}
-                        />
-                    </div>
-                    <div className={'review-panel__row'}>
-                        <button
-                            className={'review-panel__button button-add-review'}
-                            onClick={this.handleNewReview}
-                        >
-                            Add Review
-                        </button>
+                        <div className={'review-panel__row'}>
+                            <i className={'fas fa-user'}></i>
+                            <input
+                                className={'review-panel__input review-name'}
+                                type="text"
+                                value={this.state.authorName}
+                                onChange={this.handleAuthorValue}
+                                placeholder={"Author Name"}
+                            />
+                        </div>
+                        <div className={'review-panel__row'}>
+                            <i className={'fas fa-star'}></i>
+                            <input
+                                className={'review-panel__input review-rating'}
+                                type="number"
+                                min="1"
+                                max="5"
+                                value={this.state.ratingValue}
+                                onChange={this.handleScoreValue}
+                            />
+                        </div>
+                        <div className={'review-panel__row'}>
+                            <button
+                                className={'review-panel__button button-add-review'}
+                                onClick={this.handleNewReview}
+                            >
+                                Add Review
+                            </button>
 
-                        <button
-                            className={'review-panel__button button-cancel-review'}
-                            onClick={this.handleCancelReview}
-                        >
-                            Cancel
-                        </button>
+                            <button
+                                className={'review-panel__button button-cancel-review'}
+                                onClick={this.handleCancelReview}
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                    <div class={'reviews-statistics'}>
+                        
                     </div>
                 </div>
             </div>

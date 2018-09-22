@@ -177,6 +177,11 @@ tbody td {
   flex-wrap: wrap;
   margin: 1em auto; }
 
+.reviews-statistics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
 .review-panel {
   display: flex;
   justify-content: flex-start;
@@ -184,7 +189,6 @@ tbody td {
   flex-direction: column;
   background: #423b27;
   max-width: 300px;
-  margin: 0 auto;
   padding: 1em; }
   .review-panel .review-panel__row {
     width: 100%;
